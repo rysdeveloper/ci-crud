@@ -27,6 +27,7 @@
             <label for="stock">Stock</label>
             <input type="number" name="stock" id="stock" class="form-control" value="<?= set_value('stock') ?>">
         </div>
+        <?= csrf_field($id) ?>
         <button type="submit" class="btn btn-primary mt-3">Create Product</button>
     </form>
 <?= $this->endSection(); ?>
