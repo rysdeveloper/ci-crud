@@ -27,7 +27,7 @@
             <label for="stock">Stock</label>
             <input type="number" name="stock" id="stock" class="form-control" value="<?= set_value('stock', $product['stock']) ?>">
         </div>
-        <?= csrf_field($id) ?>
+        <?= csrf_field() ?>
         <button type="submit" class="btn btn-primary mt-3">Update Product</button>
     </form>
 <?= $this->endSection(); ?>
