@@ -6,6 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <?= $this->renderSection('content') ?>
+    <section class="section">
+        <div class="container">
+            <?= $this->renderSection('content') ?>
+        </div>
+    </section>
 </body>
 </html>
