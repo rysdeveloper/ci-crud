@@ -10,6 +10,7 @@ class ProductModel extends Model
     protected $useSoftDeletes = true;
     protected $deletedField = 'deleted_at';
     protected $returnType = 'array';
+    protected $perPage = 10;
 
     protected $validationRules = [
         'name'        => 'required|min_length[3]|max_length[255]',

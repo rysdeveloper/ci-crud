@@ -15,7 +15,7 @@ class ProductController extends BaseController
 
     public function index()
     {
-        $data['products'] = $this->productModel->findAll();
+        $data['products'] = $this->productModel->paginate();
         $data['pagination'] = $this->productModel->pager;
         return view('products/index', $data);
     }
