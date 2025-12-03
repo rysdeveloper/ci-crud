@@ -20,6 +20,9 @@
         <a href="/products/create" class="btn btn-primary btn-lg">
             <i class="fas fa-plus"></i> Add New Product
         </a>
+        <a href="/products/import" class="btn btn-success btn-lg ms-2">
+            <i class="fas fa-file-csv"></i> Import CSV
+        </a>
     </div>
 
     <!-- Products Table -->
