@@ -28,7 +28,7 @@
                     <td><?= $product['stock'] ?></td>
                     <td>
                         <a href="/products/edit/<?= $product['id'] ?>" class="btn btn-sm btn-warning">Edit</a>
-                        <a href="/products/delete/<?= $product['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure?')">Delete</a>
+                        <a href="/products/delete/<?= $product['id'] ?>" class="btn btn-sm btn-danger">Delete</a>
                     </td>
                 </tr>
             <?php endforeach; ?>

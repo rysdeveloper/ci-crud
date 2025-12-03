@@ -53,6 +53,12 @@ class ProductController extends BaseController
 
     public function delete($id)
     {
+        $data['product'] = $this->productModel->find($id);
+        return view('products/delete', $data);
+    }
+
+    public function destroy($id)
+    {
         $this->productModel->delete($id);
         return redirect()->to('/products')->with('success', 'Product deleted successfully.');
     }
